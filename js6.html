@@ -43,8 +43,6 @@ var canvas = document.getElementById('example');
 var ctx = canvas.getContext('2d'); 
 ctx.beginPath(); 
 drawpoint(); 
-
-
 ctx.moveTo(240, 0); 
 ctx.lineTo(240, 320); 
 ctx.moveTo(0, 160); 
@@ -61,7 +59,6 @@ alert( 'hit' );
 alert( 'miss' ); 
 } 
 } 
-
 function drawpoint() { 
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
@@ -70,7 +67,7 @@ y=160-y*10;
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d'); 
 ctx.beginPath(); 
-ctx.strokeStyle = 'red'; 
+ctx.strokeStyle = 'bloody'; 
 ctx.arc(x, y, 2, 0, 2 * Math.PI); 
 ctx.stroke(); 
 } 
@@ -79,11 +76,12 @@ ctx.stroke();
 <body> 
 x=<input type="text" value="0" id="x_znach"> 
 y=<input type="text" value="0" id="y_znach"> 
-<a href="#" onclick="clean()" class="button purple">Очистить</a> 
-<a href="#" onclick="er1()" class="button purple">че</a> 
+<a href="#" onclick="clean()" class="button purple">давай по новой миша</a> 
+<a href="#" onclick="er1()" class="button purple">рисуем</a> 
 
 <br> 
 <canvas width='480' height='320' id='example'>давай по новой миша</canvas> 
 <br> 
 </body> 
 </html>
+

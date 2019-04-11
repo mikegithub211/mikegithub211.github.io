@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function func1() {
+      a = Number(document.getElementById("a_znach").value);
+      b = Number(document.getElementById("b_znach").value);
+      var s = 0;
+      var i = a;
+      while (i < b+1) {
+        s = s + i;
+        i++;
+      }
+      document.getElementById("otvet1").innerHTML = s;
+    }
+    function func2() {
+      a = Number(document.getElementById("a2_znach").value);
+      b = Number(document.getElementById("b2_znach").value);
+      var s = 1;
+      var i = a;
+      while (i < b+1) {
+        s = s * i;
+        i++;
+      }
+      document.getElementById("otvet2").innerHTML = s;
+    }
+    function func3() {
+      a = Number(document.getElementById("a3_znach").value);
+      b = Number(document.getElementById("b3_znach").value);
+      var s = 0;
+      var i = a;
+      for (i = a; i < b+1; i++) {
+        s = s + i;
+      }
+      document.getElementById("otvet3").innerHTML = s / (b-a+1);
+    }
+     function func4() {
+      a = Number(document.getElementById("a4_znach").value);
+      b = Number(document.getElementById("b4_znach").value);
+      var s = 0;
+      var i = a;
+      while (i < b+1) {
+        s = s + i*i;
+        i++;
+      }
+      document.getElementById("otvet4").innerHTML = s;
+    }
+    function func5() {
+      n = Number(document.getElementById("n_znach").value);
+      var s = 0;
+      var i = n;
+      var r ;
+      while (i < 2*n+1) {
+        r = i * i;
+        s = s + r;
+        i++;
+      }
+      document.getElementById("otvet5").innerHTML = s;
+    }
+  </script>
+</head>
+
+<body>
+
+
+<h1>5.31</h1> 
+    n=<input type="text" value="0" id="n_znach">
+   <a href="#" onclick="func5()" class="button yellow text-blanco text-shadow-negra">буттан</a>
+  <div id="otvet5"></div>
+<br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
